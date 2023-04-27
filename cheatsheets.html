@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  .tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 25px 0;
+
+  }
+
+  .tab {
+    float: left;
+  }
+
+  .tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+  }
+
+  .tab [type=radio] {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: rgb(197, 187, 187);
+    right: 0;
+    padding: 120px;
+
+  }
+
+  [type=radio]:checked~label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+  }
+
+  [type=radio]:checked~label~.content {
+    z-index: 1;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(209, 208, 208);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    text-decoration: none;
+  }
+
+  .navbar a.active {
+    background-color: rgb(209, 208, 208);
+    color: white;
+  }
+
+  .navbar a:hover {
+    background-color: pink;
+    color: black;
+  }
+  .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: pink;
+        padding: 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html#" class="active">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="cheatsheets.html">Cheatsheets</a>
+  </div>
+  <br>
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1" checked>
+      <label for="tab-1">CSS</label>
+      <div class="content">
+        <div class="grid-container">
+          <div class="grid-item">css</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <input type="radio" id="tab-2" name="tab-group-1">
+    <label for="tab-2">HTML</label>
+    <div class="content">
+      <table>
+        <tr>
+          <td><b>HTML</b></td>
+        </tr>
+        <tr>
+          <td>Headings</td>
+          <td>
+            < h1> Biggest heading < / h1>
+          </td>
+          <td>
+            < h6> Smallest heading < / h6>
+                </h6>
+          </td>
+        </tr>
+        <tr>
+          <td>ikjuhgfdsxdfgh</td>
+          <td>jgfzdfghjk</td>
+          <td>kjhgfdfghj</td>
+        </tr>
+    </div>
+    </table>
+  </div>
+  </div>
+  <div class="tab">
+    <input type="radio" id="tab-3" name="tab-group-1">
+    <label for="tab-3">Command Line</label>
+    <div class="content">
+      <table>
+        <tr>
+          <th>Command Line</th>
+        </tr>
+        <tr>
+          <td>cd..</td>
+          <td>move up ONE directory</td>
+
+        </tr>
+        <tr>
+          <td>cd foldername</td>
+          <td>move into the specified folder</td>
+
+        </tr>
+    </div>
+    </table>
+  </div>
+  </div>
+  <div class="tab">
+    <input type="radio" id="tab-4" name="tab-group-1">
+    <label for="tab-4">Batch Files</label>
+    <div class="content">
+      <table>
+        <tr>
+          <th>Batch File</th>
+        </tr>
+        <tr>
+          <td>Line 2</td>
+          <td>Line 2.1</td>
+          <td>Line 2.2</td>
+        </tr>
+        <tr>
+          <td>Line 3</td>
+          <td>Line 3.1</td>
+          <td>Line 3.3</td>
+        </tr>
+
+    </div>
+    </table>
+  </div>
+  </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
