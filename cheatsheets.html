@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-  .tabs {
-    position: relative;
-    min-height: 200px;
-    clear: both;
-    margin: 25px 0;
+<head>
+  <style>
+    body {
+      background-color: #ddd;
+    }
 
-  }
+    .tabs {
+      position: relative;
+      min-height: 200px;
+      clear: both;
+      margin: 25px 0;
 
-  .tab {
-    float: left;
-  }
+    }
 
-  .tab label {
-    background: #eee;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-left: -1px;
-    position: relative;
-    left: 1px;
-  }
+    .tab {
+      float: left;
+    }
 
-  .tab [type=radio] {
-    display: none;
-  }
+    .tab label {
+      background: #eee;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-left: -1px;
+      position: relative;
+      left: 1px;
+    }
 
-  .content {
-    position: absolute;
-    top: 28px;
-    left: 0;
-    background: rgb(197, 187, 187);
-    right: 0;
-    padding: 120px;
+    .tab [type=radio] {
+      display: none;
+    }
 
-  }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      background: rgb(197, 187, 187);
+      right: 0;
+      padding: 120px;
 
-  [type=radio]:checked~label {
-    background: white;
-    border-bottom: 1px solid white;
-    z-index: 2;
-  }
+    }
 
-  [type=radio]:checked~label~.content {
-    z-index: 1;
-  }
+    [type=radio]:checked~label {
+      background: white;
+      border-bottom: 1px solid white;
+      z-index: 2;
+    }
 
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: left;
-    padding: 20px;
-  }
+    [type=radio]:checked~label~.content {
+      z-index: 1;
+    }
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: left;
+      padding: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
 
 
 
-  .navbar {
-    overflow: hidden;
-    background-color: rgb(209, 208, 208);
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-  }
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(209, 208, 208);
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
 
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 40px 10px;
-    text-decoration: none;
-  }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+      text-decoration: none;
+    }
 
-  .navbar a.active {
-    background-color: rgb(209, 208, 208);
-    color: white;
-  }
+    .navbar a.active {
+      background-color: rgb(209, 208, 208);
+      color: white;
+    }
 
-  .navbar a:hover {
-    background-color: pink;
-    color: black;
-  }
-  .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        background-color: pink;
-        padding: 10px;
+    .navbar a:hover {
+      background-color: pink;
+      color: black;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: pink;
+      padding: 20px;
     }
 
     .grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
     }
-</style>
+  </style>
 
-<head>
+</head>
 
 <body>
   <div class="navbar">
@@ -120,89 +126,120 @@
       <label for="tab-1">CSS</label>
       <div class="content">
         <div class="grid-container">
-          <div class="grid-item">css</div>
-          <div class="grid-item">2</div>
-          <div class="grid-item">3</div>
+          <div class="grid-item">cascading style sheets</div>
+          <div class="grid-item">Used to style webpages</div>
+          <div class="grid-item">e.g .navbar{} to style elements in my navbar</div>
           <div class="grid-item">4</div>
           <div class="grid-item">5</div>
           <div class="grid-item">6</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="tab">
-    <input type="radio" id="tab-2" name="tab-group-1">
-    <label for="tab-2">HTML</label>
-    <div class="content">
-      <table>
-        <tr>
-          <td><b>HTML</b></td>
-        </tr>
-        <tr>
-          <td>Headings</td>
-          <td>
-            < h1> Biggest heading < / h1>
-          </td>
-          <td>
-            < h6> Smallest heading < / h6>
-                </h6>
-          </td>
-        </tr>
-        <tr>
-          <td>ikjuhgfdsxdfgh</td>
-          <td>jgfzdfghjk</td>
-          <td>kjhgfdfghj</td>
-        </tr>
+    <div class="tab">
+      <input type="radio" id="tab-2" name="tab-group-1">
+      <label for="tab-2">HTML</label>
+      <div class="content">
+        <div class="grid-container">
+          <div class="grid-item">Values</div>
+          <div class="grid-item">Value of the attribute</div>
+          <div class="grid-item">""</div>
+          <div class="grid-item">Tags</div>
+          <div class="grid-item">Start and end of an element</div>
+          <div class="grid-item"><></div>
+          <div class="grid-item">attribute</div>
+          <div class="grid-item">Inside of the beginning tag</div>
+          <div class="grid-item">< a ___</div>
+        </div>
+      </div>
     </div>
-    </table>
-  </div>
-  </div>
-  <div class="tab">
-    <input type="radio" id="tab-3" name="tab-group-1">
-    <label for="tab-3">Command Line</label>
-    <div class="content">
-      <table>
-        <tr>
-          <th>Command Line</th>
-        </tr>
-        <tr>
-          <td>cd..</td>
-          <td>move up ONE directory</td>
+    <div class="tab">
+      <input type="radio" id="tab-3" name="tab-group-1">
+      <label for="tab-3">Command Line</label>
+      <div class="content">
+        <table>
+          <tr>
+            <th>Command Line</th>
+          </tr>
+          <tr>
+            <td>cd..</td>
+            <td>move up ONE directory</td>
 
-        </tr>
-        <tr>
-          <td>cd foldername</td>
-          <td>move into the specified folder</td>
+          </tr>
+          <tr>
+            <td>cd foldername</td>
+            <td>move into the specified folder</td>
 
-        </tr>
-    </div>
-    </table>
-  </div>
-  </div>
-  <div class="tab">
-    <input type="radio" id="tab-4" name="tab-group-1">
-    <label for="tab-4">Batch Files</label>
-    <div class="content">
-      <table>
-        <tr>
-          <th>Batch File</th>
-        </tr>
-        <tr>
-          <td>Line 2</td>
-          <td>Line 2.1</td>
-          <td>Line 2.2</td>
-        </tr>
-        <tr>
-          <td>Line 3</td>
-          <td>Line 3.1</td>
-          <td>Line 3.3</td>
-        </tr>
+          </tr>
+        </table>
+      </div>
 
     </div>
-    </table>
-  </div>
-  </div>
-  </div>
+    <div class="tab">
+      <input type="radio" id="tab-4" name="tab-group-1">
+      <label for="tab-4">Batch Files</label>
+      <div class="content">
+        <table>
+          <tr>
+            <th>Batch File</th>
+          </tr>
+          <tr>
+            <td>Line 2</td>
+            <td>Line 2.1</td>
+            <td>Line 2.2</td>
+          </tr>
+          <tr>
+            <td>Line 3</td>
+            <td>Line 3.1</td>
+            <td>Line 3.3</td>
+          </tr>
+        </table>
+      </div>
 
+      <div class="tab">
+        <input type="radio" id="tab-5" name="tab-group-1">
+        <label for="tab-5">Batch Files</label>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Tab 5</th>
+            </tr>
+            <tr>
+              <td>Line 2</td>
+              <td>Line 2.1</td>
+              <td>Line 2.2</td>
+            </tr>
+            <tr>
+              <td>Line 3</td>
+              <td>Line 3.1</td>
+              <td>Line 3.3</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab-6" name="tab-group-1">
+        <label for="tab-6">Batch Files</label>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Tab 6</th>
+            </tr>
+            <tr>
+              <td>Line 2</td>
+              <td>Line 2.1</td>
+              <td>Line 2.2</td>
+            </tr>
+            <tr>
+              <td>Line 3</td>
+              <td>Line 3.1</td>
+              <td>Line 3.3</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
   </div>
 </body>
 
