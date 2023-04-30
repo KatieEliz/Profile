@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <style>
     body {
       background-color: #ddd;
     }
-
     .tabs {
       position: relative;
       min-height: 200px;
       clear: both;
       margin: 25px 0;
-
     }
-
     .tab {
       float: left;
     }
-
     .tab label {
       background: #eee;
       padding: 10px;
@@ -27,11 +22,9 @@
       position: relative;
       left: 1px;
     }
-
     .tab [type=radio] {
       display: none;
     }
-
     .content {
       position: absolute;
       top: 28px;
@@ -39,19 +32,15 @@
       background: rgb(197, 187, 187);
       right: 0;
       padding: 120px;
-
     }
-
     [type=radio]:checked~label {
       background: white;
       border-bottom: 1px solid white;
       z-index: 2;
     }
-
     [type=radio]:checked~label~.content {
       z-index: 1;
     }
-
     table,
     th,
     td {
@@ -60,14 +49,10 @@
       text-align: left;
       padding: 20px;
     }
-
     table {
       border-collapse: collapse;
       width: 100%;
     }
-
-
-
     .navbar {
       overflow: hidden;
       background-color: rgb(209, 208, 208);
@@ -75,7 +60,6 @@
       position: -webkit-sticky;
       top: 0;
     }
-
     .navbar a {
       float: left;
       display: block;
@@ -84,24 +68,20 @@
       padding: 40px 10px;
       text-decoration: none;
     }
-
     .navbar a.active {
       background-color: rgb(209, 208, 208);
       color: white;
     }
-
     .navbar a:hover {
       background-color: pink;
       color: black;
     }
-
     .grid-container {
       display: grid;
       grid-template-columns: auto auto auto;
       background-color: pink;
       padding: 20px;
     }
-
     .grid-item {
       background-color: rgba(255, 255, 255, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.8);
@@ -110,9 +90,7 @@
       text-align: center;
     }
   </style>
-
 </head>
-
 <body>
   <div class="navbar">
     <a href="index.html#" class="active">Home</a>
@@ -163,20 +141,17 @@
           <tr>
             <td>cd..</td>
             <td>move up ONE directory</td>
-
           </tr>
           <tr>
             <td>cd foldername</td>
             <td>move into the specified folder</td>
-
           </tr>
         </table>
       </div>
-
     </div>
     <div class="tab">
       <input type="radio" id="tab-4" name="tab-group-1">
-      <label for="tab-4">Batch Files</label>
+      <label for="tab-4"></label>
       <div class="content">
         <table>
           <tr>
@@ -194,7 +169,6 @@
           </tr>
         </table>
       </div>
-
       <div class="tab">
         <input type="radio" id="tab-5" name="tab-group-1">
         <label for="tab-5">Batch Files</label>
@@ -215,11 +189,10 @@
             </tr>
           </table>
         </div>
-
       </div>
       <div class="tab">
         <input type="radio" id="tab-6" name="tab-group-1">
-        <label for="tab-6">Batch Files</label>
+        <label for="tab-6">GIT</label>
         <div class="content">
           <table>
             <tr>
@@ -237,10 +210,8 @@
             </tr>
           </table>
         </div>
-
       </div>
     </div>
   </div>
 </body>
-
 </html>
