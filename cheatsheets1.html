@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         .footer {
             position: fixed;
@@ -83,7 +84,10 @@
         #box1,
         #box2,
         #box3,
-        #box4 {
+        #box4,
+        #box5,
+        #box6,
+        #box7 {
             display: none;
             border-top: 1px solid #bbb;
             padding: 15px;
@@ -92,7 +96,10 @@
         #tab1:checked~#box1,
         #tab2:checked~#box2,
         #tab3:checked~#box3,
-        #tab4:checked~#box4 {
+        #tab4:checked~#box4,
+        #tab5:checked~#box5,
+        #tab6:checked~#box6,
+        #tab7:checked~#box7 {
             display: block;
             box-shadow: 0 0 15px #939393;
         }
@@ -159,19 +166,25 @@
         <label for="tab3">Command Line</label>
         <input type="radio" id="tab4" name="tabs">
         <label for="tab4">Batch File</label>
+        <input type="radio" id="tab5" name="tabs">
+        <label for="tab5">Git</label>
+        <input type="radio" id="tab6" name="tabs">
+        <label for="tab6">Go code</label>
+        <input type="radio" id="tab7" name="tabs">
+        <label for="tab7">Go test</label>
 
         <div id="box1">
             <div class="content">
                 <div class="grid-container">
                     <div class="grid-item">Contained in style tags</div>
                     <div class="grid-item">
-                        < style>
-                            < / style>
+                        &lt; style &gt;
+                        &lt; / style &gt;
                     </div>
-                    <div class="grid-item">(in < head>
-                            < / head>)</div>
+                    <div class="grid-item">(in &lt; head &gt;
+                        &lt; / head &gt;)</div>
                     <div class="grid-item">
-                        </style>
+                        &lt; /style &gt;
                     </div>
                     <div class="grid-item">5</div>
                     <div class="grid-item">6</div>
@@ -183,59 +196,97 @@
                 <div class="grid-container">
                     <div class="grid-item">Tags</div>
                     <div class="grid-item">
-                        <>
+                        &lt; &gt;
                     </div>
                     <div class="grid-item">Fundamental building blocks of your code
                         tells browser how to display what you're displaying</div>
                     <div class="grid-item">Attributes</div>
-                    <div class="grid-item">(e.g) < href ____</div>
-                            <div class="grid-item">Attributes provide additonal information about
-                                HTML Elements</div>
-                            <div class="grid-item">Values</div>
-                            <div class="grid-item">""</div>
-                            <div class="grid-item"></div>
-                            <div class="grid-item">Elements</div>
-                            <div class="grid-item"></div>
-                            <div class="grid-item">An element is the entire line of code from the start tag
-                                to the end tag</div>
-                    </div>
-                </div>
-            </div>
-            <div id="box3">
-                <div class="content">
-                    <div class="grid-container">
-                        <div class="grid-item">cd ..</div>
-                        <div class="grid-item">Move up ONE directory</div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item">cd folername</div>
-                        <div class="grid-item">Move into specific folder</div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item">md foldername</div>
-                        <div class="grid-item">Make a directory</div>
-                    </div>
-                </div>
-            </div>
-            <div id="box4">
-                <div class="content">
-                    <div class="grid-container">
-                        <div class="grid-item">@echo OFF</div>
-                        <div class="grid-item">Dont echo the command to standard output</div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item">set p %colour%="Please enter a colour"</div>
-                        <div class="grid-item">This sets a variable assigned colour and asks
-                            the user to enter a colour.</div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"> Else()</div>
-                        <div class="grid-item">Any other input will output whatever
-                            is in the ELSE statement.</div>
-                    </div>
+                    <div class="grid-item">(e.g) &lt; href ____</div>
+                    <div class="grid-item">Attributes provide additonal information about
+                        HTML Elements</div>
+                    <div class="grid-item">Values</div>
+                    <div class="grid-item">""</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">Elements</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">An element is the entire line of code from the start tag
+                        to the end tag</div>
                 </div>
             </div>
         </div>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <div class="footer">
-            <p></p>
+
+        <div id="box3">
+            <div class="content">
+                <div class="grid-container">
+                    <div class="grid-item">cd ..</div>
+                    <div class="grid-item">Move up ONE directory</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">cd folername</div>
+                    <div class="grid-item">Move into specific folder</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">md foldername</div>
+                    <div class="grid-item">Make a directory</div>
+                </div>
+            </div>
         </div>
+        <div id="box4">
+            <div class="content">
+                <div class="grid-container">
+                    <div class="grid-item">@echo OFF</div>
+                    <div class="grid-item">Dont echo the command to standard output</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item">set p %colour%="Please enter a colour"</div>
+                    <div class="grid-item">This sets a variable assigned colour and asks
+                        the user to enter a colour.</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"> Else()</div>
+                    <div class="grid-item">Any other input will output whatever
+                        is in the ELSE statement.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="box5">
+            <div class="content">
+                <div class="grid-container">
+                    <div class="grid-item">git add .</div>
+                    <div class="grid-item">git commit -m "update"</div>
+                    <div class="grid-item">git push</div>
+                </div>
+            </div>
+        </div>
+        <div id="box6">
+            <div class="content">
+                <div class="grid-container">
+                    <div class="grid-item">:= assign function to variable</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+        </div>
+        <div id="box7">
+            <div class="content">
+                <div class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p></p>
+    </div>
 </body>
 
 </html>
