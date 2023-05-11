@@ -4,8 +4,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-     
-
         body {
             padding: 20px;
             background: #ddd;
@@ -99,6 +97,28 @@
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        .grid-container-table {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        .grid-container-table2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: pink;
+            padding: 20px;
+        }
+
+
+        .grid-container-table3 {
+            display: grid;
+            grid-template-columns: auto auto;
             background-color: pink;
             padding: 20px;
         }
@@ -203,13 +223,22 @@
                     <div class="grid-item"></div>
                     <div class="grid-item">An element is the entire line of code from the start tag
                         to the end tag</div>
+                    <div class="grid-item">Page structure</div>
+                    <div class="grid-item">It's structured using a combination of HTML tags and elements.</div>
+                    <div class="grid-item">&lt;!DOCUTYPE html &gt; <br> &lt; html &gt; <br> &lt; head &gt; <br>
+                        &lt;/head &gt; <br> &lt; body &gt; <br> &lt;/body &gt; <br> &lt;/html &gt;</div>
+                    <div class="grid-item">What is a URL & parts of a URL</div>
+                    <div class="grid-item">It's the address of a webpage</div>
+                    <div class="grid-item">protocol, domain name or IP address, (port), path, (query string), (fragment)
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <div id="box3">
             <div class="content">
-                <div class="grid-container">
+                <div class="grid-container-table3">
                     <div class="grid-item">cd ..</div>
                     <div class="grid-item">Move up ONE directory</div>
                     <div class="grid-item"></div>
@@ -223,7 +252,7 @@
         </div>
         <div id="box4">
             <div class="content">
-                <div class="grid-container">
+                <div class="grid-container-table2">
                     <div class="grid-item">@echo OFF</div>
                     <div class="grid-item">Dont echo the command to standard output</div>
                     <div class="grid-item"></div>
@@ -253,34 +282,59 @@
                     <div class="grid-item">:= shorthand for declaring and initializing a variable</div>
                     <div class="grid-item">== equal to</div>
                     <div class="grid-item">!= not equal to</div>
+
                     <div class="grid-item">assigning variables & values to varibales </div>
-                    <div class="grid-item">Using var, followed by the variable name and type. <br> You can also assign a value to a varibale.<br>Or the you can use the short variable decleration operator := to declare and assign a value to a varibale in one line.</div>
+                    <div class="grid-item">Using var, followed by the variable name and type. <br> You can also assign a
+                        value to a varibale.<br>Or the you can use the short variable decleration operator := to declare
+                        and assign a value to a varibale in one line.</div>
                     <div class="grid-item">(e.g)var age int<br>(e.g) var age int = 25<br>(e.g)age := 25</div>
+
+                    <div class="grid-item">Functions, including parameters and return types</div>
+                    <div class="grid-item">Parameters are values that are passed to the function when it is called and
+                        return values are values that are returned by the function when it compeletes.</div>
+                    <div class="grid-item">func add(x int, y int)int { <br> return x + y <br> }</div>
+
                     <div class="grid-item">For loop</div>
-                    <div class="grid-item">initializes a variable (i) is less than 5, loop is executed. After each iteration of the loop the value of i is incrimated by 1 (i++).</div>
+                    <div class="grid-item">initializes a variable (i) is less than 5, loop is executed. After each
+                        iteration of the loop the value of i is incrimated by 1 (i++).</div>
                     <div class="grid-item">(e.g)i:=0; i &lt; 5; i++ <br> fmt.Println(i)</div>
+
+                 
+
+                    <div class="grid-item">While loop</div>
+                    <div class="grid-item">The loop variable (i) is intialized to 0 before the loop, (i &lt; 5 ) checks
+                        if (i) is less than 5. The loop continues to execute as long as the condition is true. (i++)
+                        increments (i) by 1 after each iteration. </div>
+                        <div class="grid-item"></div>
+
+                    <div class="grid-item">Difference between while and for loops</div>
+                    <div class="grid-item">'for' loop is a general purpose loop that allows you to specify an
+                        initanilization statment, condition and post statment. <br> A 'while' loop is a special case of
+                        a 'for' loop that omits the initalization and post statements.</div>
+                        <div class="grid-item"></div>
+
                     <div class="grid-item">if/else statements</div>
-                    <div class="grid-item">Use if to perform conditional execution of code.<br>else is used in conjunction with if statements to execute code when condition of if is false.<br>if else statements chain multiple conditions together.</div>
-                    <div class="grid-item">For loop</div>
+                    <div class="grid-item">Use (if) to perform conditional execution of code.<br>(else) is used in
+                        conjunction with if statements to execute code when condition of if is false.<br>(if else)
+                        statements chain multiple conditions together.</div>
+                    <div class="grid-item">(e.g)</div>
+
+                    <div class="grid-item">To run in terminal</div>
+                    <div class="grid-item">go run .</div>
+                    <div class="grid-item"></div>
                 </div>
             </div>
         </div>
         <div id="box7">
             <div class="content">
-                <div class="grid-container">
+                <div class="grid-container-table">
                     <div class="grid-item">(t. testing.T) stores the state of the test.</div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
+                    <div class="grid-item">To run (go test .)</div>
                 </div>
             </div>
         </div>
     </div>
-  
+
     </div>
 </body>
 
