@@ -12,7 +12,6 @@
         .tabinator {
             background: white;
             font-family: Open Sans;
-            height: 500px;
             width: 100%;
         }
 
@@ -34,7 +33,7 @@
             margin-left: -1px;
         }
 
-        .tabinator label:before {
+        /*.tabinator label:before {
             content: '';
             display: block;
             width: 100%;
@@ -44,7 +43,7 @@
             bottom: -11px;
             left: 0;
             z-index: 10;
-        }
+        }**/
 
         .tabinator label:hover {
             color: #888;
@@ -52,7 +51,7 @@
         }
 
         .tabinator input:checked+label {
-            position: relative;
+            position: inherit;
             color: #000;
             background: #fff;
             border: 1px solid #bbb;
@@ -60,7 +59,7 @@
             border-radius: 5px 5px 0 0;
         }
 
-        .tabinator input:checked+label:after {
+        /*.tabinator input:checked+label:after {
             display: block;
             content: '';
             position: absolute;
@@ -69,7 +68,7 @@
             bottom: 0;
             left: 0;
             box-shadow: 0 0 15px #939393;
-        }
+        }*/
 
         #box1,
         #box2,
@@ -97,28 +96,6 @@
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
-            background-color: pink;
-            padding: 20px;
-        }
-
-        .grid-container-table {
-            display: grid;
-            grid-template-columns: auto auto;
-            background-color: pink;
-            padding: 20px;
-        }
-
-        .grid-container-table2 {
-            display: grid;
-            grid-template-columns: auto auto;
-            background-color: pink;
-            padding: 20px;
-        }
-
-
-        .grid-container-table3 {
-            display: grid;
-            grid-template-columns: auto auto;
             background-color: pink;
             padding: 20px;
         }
@@ -156,6 +133,41 @@
         .navbar a:hover {
             background-color: pink;
             color: black;
+        }
+
+        /*Table styling stolen from water.css*/
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            width: 100%;
+            table-layout: fixed;
+            font-family: Open Sans;
+            font-size: 20px;
+            border: 1px solid;
+        }
+
+        table caption {
+            text-align: left;
+        }
+
+        td,
+        th {
+            padding: 6px;
+            text-align: left;
+            vertical-align: top;
+            word-wrap: break-word;
+            border: 1px solid;
+        }
+
+        td.middle {
+            text-align: center;
+            width: 25%;
+        }
+
+        thead {
+            border-bottom: 1px solid #dbdbdb;
+            border-bottom: 1px solid var(--border);
         }
     </style>
 </head>
@@ -238,7 +250,7 @@
 
         <div id="box3">
             <div class="content">
-                <div class="grid-container-table3">
+                <div class="grid-container">
                     <div class="grid-item">cd ..</div>
                     <div class="grid-item">Move up ONE directory</div>
                     <div class="grid-item"></div>
@@ -252,7 +264,7 @@
         </div>
         <div id="box4">
             <div class="content">
-                <div class="grid-container-table2">
+                <div class="grid-container">
                     <div class="grid-item">@echo OFF</div>
                     <div class="grid-item">Dont echo the command to standard output</div>
                     <div class="grid-item"></div>
@@ -297,7 +309,7 @@
                     <div class="grid-item">For loop</div>
                     <div class="grid-item">initializes a variable (i) is less than 5, loop is executed. After each
                         iteration of the loop the value of i is incrimated by 1 (i++).</div>
-                    <div class="grid-item">(e.g)i:=0; i &lt; 5; i++ <br> fmt.Println(i)</div>
+                    <div class="grid-item"><img src="C:\Users\Katie.Morton\Documents\HTML\netflify\Day 3\Flex\Profilre\photos\for loop.png"></div>
 
                  
 
@@ -317,19 +329,27 @@
                     <div class="grid-item">Use (if) to perform conditional execution of code.<br>(else) is used in
                         conjunction with if statements to execute code when condition of if is false.<br>(if else)
                         statements chain multiple conditions together.</div>
-                    <div class="grid-item">(e.g)</div>
+                    <div class="grid-item"><img src="https://cdn.educba.com/academy/wp-content/uploads/2019/08/Expression-is-true.png" width=300px height="200px"></div>
 
-                    <div class="grid-item">To run in terminal</div>
+                    <div class="grid-item"></div>
                     <div class="grid-item">go run .</div>
                     <div class="grid-item"></div>
+
+
                 </div>
             </div>
         </div>
         <div id="box7">
             <div class="content">
-                <div class="grid-container-table">
+                <div class="grid-container">
                     <div class="grid-item">(t. testing.T) stores the state of the test.</div>
-                    <div class="grid-item">To run (go test .)</div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
                 </div>
             </div>
         </div>
